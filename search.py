@@ -73,8 +73,9 @@ strname = ""
 switch = 0
 if searchLen != 1:
     switch = 1
-if (len(sys.argv) - switch) != 1:
-    for x in range(1, len(sys.argv) - 1):
+	
+if (len(sys.argv) - 1) != 1:
+    for x in range(1, len(sys.argv) - switch):
         if str(f(sys.argv[x])) != "None":
             flag = str(f(sys.argv[x]))
         strname += sys.argv[x].replace(" ", "+")
