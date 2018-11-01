@@ -1,12 +1,18 @@
 # Search-Command
-A python script to search the web
+A python script to search the web. Set to take certain inputs when being called to produce different results in this form: 
 
-Three modes:
+search thing to be searched -n 3
 
-Nomral - Searches google normally on input
+# Three modes
 
-News - Searches for news on the input
+Normal - Searches google normally on input (default)
 
-News Latest - Searches for latest news on input
+News - Searches for news on the input (-n)
+
+News Latest - Searches for latest news on input (-l)
+
+# Variable outputs
+
+Putting a number after the query returns that number of pages, with each page returning ten links. 1 is default
 
 ![Screenshot](https://i.imgur.com/ZQPWXcD.png)
