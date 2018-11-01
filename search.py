@@ -67,18 +67,19 @@ def googledata(page):
         
         print("[92;1m" + countstr + "[0m " + tempStr + strvar + " [91m" +  newsDataGoogle[x].get("href").split("&sa=")[0].replace("/url?q=","") + "[0m")
         count += 1
-		
+        
 flag = ""
 strname = ""
 switch = 0
 if searchLen != 1:
     switch = 1
-	
+    
 if (len(sys.argv) - 1) != 1:
     for x in range(1, len(sys.argv) - switch):
         if str(f(sys.argv[x])) != "None":
             flag = str(f(sys.argv[x]))
-        strname += sys.argv[x].replace(" ", "+")
+        else:
+            strname += sys.argv[x].replace(" ", "+")
     strname = strname.replace("1", "")
 else:
     strname = sys.argv[1].replace(" ", "+")
